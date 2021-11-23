@@ -1,6 +1,7 @@
 package com.blo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Service;
 
 import com.dao.VilleDAO;
@@ -12,9 +13,9 @@ public class VilleBLOImpl implements VilleBLO {
 	@Autowired
 	private VilleDAO villeDAO;
 	
-	@Override
 	public Ville getInfoVilles() {
-		// code métier	
+		// code métier
+		System.out.println("test");
 		return villeDAO.findVille();
 	}
 
